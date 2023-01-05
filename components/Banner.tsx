@@ -2,13 +2,13 @@ function Banner() {
     return (
       <div className="flex flex-col lg:flex-row lg:space-x-5 justify-between font-bold px-10 py-5 mb-10">
         <div>
-          <h1 className="text-7xl">Current Blog</h1>
+          <h1 className="text-7xl text-gray-800">Tech Blogs</h1>
           <h2 className="mt-7 md:mt-3">
             Welcome to{" "}
-            <span className="underline decoration-4 decoration-[#3e4444] ">
+            <span className="underline decoration-2 decoration-[#0369A1] text-gray-800">
               the Peoples
             </span>{" "}
-            Favorite Blogs of the Year
+            Favorite Tech Blogs of the Year
           </h2>
         </div>
   

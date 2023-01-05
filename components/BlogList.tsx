@@ -10,7 +10,7 @@ type Props = {
 export default function BlogList({ posts }: Props) {
   return (
     <div>
-      <hr className=" border-[#F7AB0A] mb-10" />
+      <hr className=" border-[#0369A1] mb-10" />
       <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24">
         {posts.map((post) => (
           <ClientSideRoute route={`/post/${post.slug.current}`} key={post._id}>
@@ -38,7 +38,7 @@ export default function BlogList({ posts }: Props) {
                     {post.categories.map((category) => (
                       <div
                         key={category._id}
-                        className="bg-[#F7AB0A] text-center text-black px-3 py-1 rounded-full text-sm font-semibold"
+                        className="bg-[#0284C7] text-center text-black px-3 py-1 rounded-full text-sm font-semibold"
                       >
                         {category.title}
                       </div>

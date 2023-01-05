@@ -7,20 +7,20 @@ function Header() {
         <div className="flex items-center space-x-2">
         <Link href="/">
           <Image
-            src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png"
+            src="https://images.unsplash.com/photo-1573848953384-3be02021eb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             width={50}
             className="rounded-full"
             height={50}
             alt="logo"
           />
         </Link>
-        <h1>You to Us Blogs</h1>
+        <h1>Technology</h1>
         </div>
 
         <div>
         <Link
           href="studio"
-          className="px-5 py-3 text-sm md:text-base bg-gray-800 text-[#fdfdfd] flex items-center rounded-full text-center"
+          className="px-5 py-3 text-sm md:text-base bg-sky-700 text-[#fdfdfd] flex items-center rounded-full text-center dark:md:hover:bg-sky-600"
         >
           Click Here to Start Creating
         </Link>

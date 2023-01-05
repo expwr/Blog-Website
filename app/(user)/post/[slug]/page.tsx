@@ -40,7 +40,7 @@ async function Post({ params: { slug } }: Props) {
 
   return (
     <article className="px-10 pb-28">
-      <section className="space-y-2 border border-[#F7AB0A] text-white">
+      <section className="space-y-2 border-4 border-[#253035] text-white">
         <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
             <Image
@@ -51,7 +51,7 @@ async function Post({ params: { slug } }: Props) {
             />
           </div>
 
-          <section className="p-5 bg-[#F7AB0A] w-full">
+          <section className="p-5 bg-[#0369A1] w-full">
             <div className="flex flex-col md:flex-row justify-between gap-y-5">
               <div>
                 <h1 className="text-4xl font-extrabold">{post.title}</h1>
@@ -65,16 +65,19 @@ async function Post({ params: { slug } }: Props) {
               </div>
               <div className="flex items-center space-x-2">
                 <Image
-                  className="rounded-full"
+                  className="rounded-3xl"
                   src={urlFor(post.author.image).url()}
                   alt={post.author.name}
                   height={40}
                   width={40}
                 />
 
-                <div className="w-64">
-                  <h3 className="text-lg font-bold">{post.author.name}</h3>
-                  <div className="line-clamp-2 text-ellipsis text-xs text-white">
+                <div className="w-64 pl-2">
+                  <div className="align-middle">
+                    <h3 className="text-lg font-bold -mb-1">{post.author.name}</h3>
+                    <h1 className="font-bold text-sm 	font-style: italic ">{post.author.credentials}</h1>
+                  </div>
+                  <div className="line-clamp-2 text-ellipsis text-xs text-white pt-2">
                     <PortableText
                       value={post.author.bio}
                       components={RichTextComponents}

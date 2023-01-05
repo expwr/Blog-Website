@@ -21,6 +21,7 @@ type Base = {
     image: Image;
     name: string;
     slug: Slug;
+    credentials: string;
   }
   
   interface Image {

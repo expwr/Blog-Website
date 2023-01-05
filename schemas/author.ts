@@ -28,8 +28,13 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'credentials',
+      title: 'Credentials',
+      type: 'string',
+    }),
+    defineField({
       name: 'bio',
-      title: 'Bio',
+      title: 'Life',
       type: 'array',
       of: [
         {
