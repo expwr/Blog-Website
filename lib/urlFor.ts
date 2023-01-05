@@ -1,7 +1,7 @@
 import { client } from "./sanity.client";
 import imageUrlBuilder from "@sanity/image-url";
 
-// Get a pre-configured url-builder from your sanity client
+// Get the pre-configured url-builder from sanity
 const builder = imageUrlBuilder(client);
 
 // Then we like to make a simple function like this that gives the

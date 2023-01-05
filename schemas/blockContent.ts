@@ -1,3 +1,4 @@
+// Copy and pasted if you were curious
 import {defineType, defineArrayMember} from 'sanity'
 
 /**

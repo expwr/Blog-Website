@@ -1,3 +1,5 @@
+// Serves one purpose which is type checking. In this case it checks for the sections in sanity that were created in the schema folder. If a new section is created in the schema folder but this file isn't updated as well nothing will be sent through and it won't work that is why this is such an important file when it comes to the whole application working
+
 type Base = {
     _createdAt: string;
     _id: string;
